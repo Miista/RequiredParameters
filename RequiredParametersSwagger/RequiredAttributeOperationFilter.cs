@@ -38,11 +38,24 @@ namespace RequiredParametersSwagger
             return self.ParameterInfo.CustomAttributes.Any(_ => _.AttributeType == typeof(T));
         }
 
+        /// <summary>
+        ///     Returns the proper name for the parameter. This is either the name of the variable,
+        ///     or in the case of using any attributes in the From* family,
+        ///     the name is the value of the Name parameter (if set).
+        /// </summary>
+        /// <param name="self">
+        ///     The parameter description.
+        /// </param>
+        /// <returns>The proper name for the parameter.</returns>
         private static string ProperName(ControllerParameterDescriptor self)
         {
             foreach (var attribute in self.ParameterInfo.CustomAttributes)
             {
-                if (attribute.AttributeType == typeof(FromQueryAttribute))
+                var attributeType = attribute.AttributeType;
+                if (attributeType == typeof(FromQueryAttribute)
+                    || attributeType == typeof(FromFormAttribute)
+                    || attributeType == typeof(FromRouteAttribute)
+                    || attributeType == typeof(FromHeaderAttribute))
                 {
                     if (attribute.NamedArguments.Count == 0) return self.Name;
 
