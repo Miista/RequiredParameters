@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Filters.RequiredAttribute", "RequiredParametersSwagger\Swagger.Filters.RequiredAttribute.csproj", "{33A4E451-6CE4-42CC-A9BD-2F2ABA2BD4C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Filters.RequiredAttribute", "Swagger.Filters.RequiredAttribute\Swagger.Filters.RequiredAttribute.csproj", "{33A4E451-6CE4-42CC-A9BD-2F2ABA2BD4C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
