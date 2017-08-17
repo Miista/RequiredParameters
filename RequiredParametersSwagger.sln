@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequiredParametersSwagger", "RequiredParametersSwagger\RequiredParametersSwagger.csproj", "{33A4E451-6CE4-42CC-A9BD-2F2ABA2BD4C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swagger.Filters.RequiredAttribute", "RequiredParametersSwagger\Swagger.Filters.RequiredAttribute.csproj", "{33A4E451-6CE4-42CC-A9BD-2F2ABA2BD4C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07C10BFA-EFEC-486C-BC10-37B542A36C19}
 	EndGlobalSection
 EndGlobal
