@@ -30,7 +30,7 @@ namespace RequiredParametersSwagger
                 .GroupBy(ProperName, HasAttribute<RequiredAttribute>)
                 .ToDictionary(_ => _.Key, _ => _.First());
 
-            foreach (IParameter p in operation.Parameters) p.Required = parameterRequired[p.Name];
+            foreach (IParameter p in operation.Parameters) p.Required = p.Required || parameterRequired[p.Name];
         }
 
         private static bool HasAttribute<T>(ControllerParameterDescriptor self)
