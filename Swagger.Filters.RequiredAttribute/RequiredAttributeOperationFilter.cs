@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Mvc.Controllers;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-
-namespace RequiredParametersSwagger
+namespace Swagger.Filters
 {
     /// <summary>
     ///     Marks parameters annotated with <see cref="RequiredAttribute" /> as being required in the generated Swagger
