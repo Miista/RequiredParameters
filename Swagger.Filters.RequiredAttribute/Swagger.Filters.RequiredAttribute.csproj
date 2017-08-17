@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
     <AssemblyName>Swagger.Filters.RequiredAttribute</AssemblyName>
-    <PackageId>Swagger.Filters.RequiredAttribute</PackageId>
+    <PackageId>Swashbuckle.Filters.RequiredAttribute</PackageId>
     <Authors>Søren Palmund</Authors>
     <Company />
     <Product>Required Parameters for Swagger</Product>
     <Description>Process required parameters when generating Swagger documentation.</Description>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/Miista/RequiredParameters</RepositoryUrl>
-    <PackageTags>WebApi Swagger AspNet Documentation SwaggerUi AspNetWebApi Docs</PackageTags>
+    <PackageTags>WebApi Swagger SwashbuckleAspNet Documentation SwaggerUi AspNetWebApi Docs</PackageTags>
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <Version>1.0.1</Version>
     <FileVersion>1.0.0.1</FileVersion>
